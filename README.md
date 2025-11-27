@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-4 homework from course go it fullstack web development 11/22/2025
+# goit-markup-hw-03
+3 homework from course go it fullstack web development  11/20/2025
