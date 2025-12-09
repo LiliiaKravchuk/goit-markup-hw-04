@@ -70,7 +70,7 @@ button {
 }
 
 header {
-    border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -92,7 +92,6 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: rgb(0, 0, 128);
   width: 156px;
   background: #fff;
   border-bottom: 1px solid #e7e9fc;
@@ -147,7 +146,7 @@ header {
   color: #404bbf;
 } */
 
-.header-menu-link:is(:hover, :focus)::after {
+.header-menu-link:is(:active, :focus)::after {
   color: #404bbf;
   opacity: 1;
 }
@@ -247,6 +246,13 @@ header {
 
 .hero {
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -264,13 +270,6 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 48px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .hero-btn-blue {
@@ -289,17 +288,17 @@ header {
   max-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 
 .hero-btn-blue:hover,
 .hero-btn-blue:focus {
   background-color: #404bbf;
-  transform: scale(1.1);
   border: 1px solid #2939e5;
 }
 
 .features {
+  padding-bottom: 120px;
 }
 
 .features-list {
@@ -409,8 +408,8 @@ header {
 
 .team-icon {
   fill: #f4f4fd;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .portfolio {
