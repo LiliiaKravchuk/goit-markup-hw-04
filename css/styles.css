@@ -70,6 +70,7 @@ button {
 }
 
 header {
+    border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -131,6 +132,15 @@ header {
   transition: tranform 250ms ease-in-out;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
+}
+
+.header-menu-link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* .header-menu-link:is(:hover, :focus) {
@@ -284,7 +294,6 @@ header {
 
 .hero-btn-blue:hover,
 .hero-btn-blue:focus {
-  color: #404bbf;
   background-color: #404bbf;
   transform: scale(1.1);
   border: 1px solid #2939e5;
