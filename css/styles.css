@@ -54,14 +54,16 @@ img {
 }
 
 address {
+  font-style: normal;
 }
 
 button {
   cursor: pointer;
 }
 
+/* max-width з необхідними внутрішніми відступами по боках, щоб лейаут коректно центрувався на широких вьюпортах. */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   /* 1158-1128=30/2=15px paddings */
   padding-right: 15px;
   padding-left: 15px;
@@ -71,8 +73,6 @@ button {
 
 header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-container {
@@ -109,6 +109,8 @@ header {
 }
 
 .header-menu-list {
+    padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   width: 261px;
   justify-content: space-between;
@@ -131,6 +133,8 @@ header {
   transition: tranform 250ms ease-in-out;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
+      padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -165,7 +169,10 @@ header {
   display: flex;
   margin-left: auto;
   align-items: center;
+    padding-top: 24px;
+  padding-bottom: 24px;
   gap: 40px;
+  
 }
 
 .header-contacts-item {
@@ -306,12 +313,12 @@ header {
   margin-bottom: 409px;
   display: flex;
   gap: 24px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .features-item {
-  width: calc((100% - 24px * 2) / 4);
+  max-width: calc((100% - 24px * 3) / 4);
 }
 
 .features-icon-container {
@@ -339,12 +346,15 @@ header {
 .features-subtitle {
   margin-bottom: 8px;
   font-weight: 500;
+  text-align: left;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  
 }
 
 .feature-description {
+  text-align: left;
 }
 
 .team-cards {
@@ -376,8 +386,9 @@ header {
 
 /* Це зробить зображення «гумовими», тобто вони підлаштовуватимуться під ширину батьківського елемента */
 .team-cards-img {
-  /* min-width: 100%; */
   object-fit: cover;
+  width: 264px;
+  height: 260px;
 }
 
 .team-cards-subtitle {
@@ -439,7 +450,9 @@ header {
 }
 
 .portfolio-img {
-  width: 100%;
+  /* width: 100%; */
+    width: 360px;
+  height: 300px;
 }
 
 .portfolio-img-cover {
@@ -447,7 +460,7 @@ header {
   overflow: hidden;
 }
 
-.portfolio-img-cover:hover .appearing-text-portfolio {
+.portfolio-item:hover .appearing-text-portfolio {
   transform: translateY(0);
 }
 
