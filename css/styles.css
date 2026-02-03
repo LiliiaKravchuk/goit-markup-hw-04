@@ -131,7 +131,7 @@ header {
   display: block;
 }
 .current_page {
-  color: #2e2f42;
+  color: #404bbf;
   position: relative;
 }
 
@@ -427,13 +427,13 @@ header {
   fill: #f4f4fd;
 }
 
-.team-cards > .social-icons-link:hover,
-.team-cards > .social-icons-link:focus {
+.team-cards > .social-icons-link li a:hover,
+.team-cards > .social-icons-link li a:focus {
   background-color: #404bbf;
 }
 
-.footer > .social-icons-link:hover,
-.footer > .social-icons-link:focus {
+.footer > .social-icons-link li a:hover,
+.footer > .social-icons-link li a:focus {
   background-color: #31d0aa;
 }
 
@@ -497,7 +497,7 @@ header {
   opacity: 1;
 }
 
-.portfolio-item:hover .portfolio-item {
+.portfolio-item:hover .portfolio-img-cover {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -571,9 +571,12 @@ header {
   flex-direction: column;
   gap: 16px;
 }
-.footer-social-section > .social-icons {
+
+.footer-social-section > .social-icons:not(:last-child) {
+
   margin-right: 16px;
 }
+
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
